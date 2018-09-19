@@ -4,7 +4,7 @@
 
 <div class="login">
     <fieldset>
-        <legend><h1>Connexion</h1></legend>
+        <legend><h1>CONNEXION</h1></legend>
 
         <form action="home.php" method="POST" autocomplete="off">
             <input type="email" name="email" placeholder="Email / Pseudo" />
