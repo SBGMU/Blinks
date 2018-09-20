@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8"/>
+        <a class="navLog" href="<?= $lienLog ?>"><?= $valueLog ?></a>
+        <img class="logo" src=""/>LOGO
         <title><?= $title ?></title>
-        <link href="public/css/style.css" rel="stylesheet" /> 
     </head>
         
     <body>

@@ -1,13 +1,45 @@
+body {
+    margin:auto;
+    text-align:center;
+}
+
+.navLog {
+    float: right;
+}
+/************INDEX PAGE *******************/
+
 .login h1{
     text-align: center;
 }
 
 .login input{
     text-decoration: none;
+    margin:auto;
+    padding:10px;
 }
 
 .login fieldset{
-    border: 2px solid rgb(153, 153, 153);
-    width: 250px;
-    float: center;
+    border: 3px solid rgb(102, 2, 116);
+    width: 450px;
+    padding:40px;
+    margin:auto;
+}
+
+/************SIGN IN PAGE*******************/
+
+.signup h1 {
+    text-align: center;
+}
+
+.signup input{
+    text-decoration: none;
+    margin:auto;
+    padding:10px;
+}
+
+.signup fieldset{
+    border: 3px solid rgb(39, 1, 109);
+    width: 450px;
+    margin:auto;
+    padding:40px;
 }
