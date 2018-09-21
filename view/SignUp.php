@@ -11,12 +11,12 @@ $valueLog = "SE CONNECTER";
             <legend><h1>INSCRIPTION</h1></legend>
     
             <form action="home.php" method="POST" autocomplete="off">
-                    <p><input type="text" autocomplete="off" name="username" size=40 placeholder="Nom d'utilisateur"></p>
-                    <p><input type="email" autocomplete="off" name="email" size=40 placeholder="Email"></p>
-                    <p><input type="text" autocomplete="off" name="nom" size=40 placeholder="Nom"></p>
-                    <p><input type="text" autocomplete="off" name="prenom" size=40 placeholder="Prénom"></p>
-                    <p><input type="password" autocomplete="off" name="motdepasse" size=40 placeholder="Mot de Passe"></p>
-                    <p><input type="password" autocomplete="off" name="confirmer_motdepasse" size=40 placeholder="Confirmer Mot de Passe"></p>
+                    <p><input type="text" autocomplete="nope" name="username" size=40 placeholder="Nom d'utilisateur *" required></p>
+                    <p><input type="text" autocomplete="nope" name="nom" size=40 placeholder="Nom"></p>
+                    <p><input type="text" autocomplete="nope" name="prenom" size=40 placeholder="Prénom *" required></p>
+                    <p><input type="email" autocomplete="nope" name="email" size=40 placeholder="Email *" required></p>
+                    <p><input type="password" autocomplete="new-password" name="motdepasse" size=40 placeholder="Mot de Passe *" required></p>
+                    <p><input type="password" autocomplete="new-password" name="confirmer_motdepasse" size=40 placeholder="Confirmez votre mot de passe *" required></p>
                     
                     <input type="submit" name="signup" value="S'INSCRIRE">
             </form>

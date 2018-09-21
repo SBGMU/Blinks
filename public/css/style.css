@@ -17,6 +17,9 @@ body {
     margin:auto;
     padding:10px;
 }
+.login input:focus{
+    outline:none;
+}
 
 .login fieldset{
     border: 3px solid rgb(102, 2, 116);
@@ -35,6 +38,9 @@ body {
     text-decoration: none;
     margin:auto;
     padding:10px;
+}
+.signup input:focus{
+    outline:none;
 }
 
 .signup fieldset{

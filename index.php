@@ -11,9 +11,9 @@ $valueLog = "S'INSCRIRE";
         <h1>CONNEXION</h1>
     <hr>
     <fieldset>
-        <form action="home.php" method="POST" autocomplete="off">
-                <p><input autocomplete="off" id="email" type="email" name="email" placeholder="Email / Pseudo" size=40 ></p>
-                <p><input autocomplete="off" type="password" name="motdepasse" placeholder="Mot de Passe" size=40 ></p>
+        <form action="home.php" method="POST" autocomplete="false">
+                <p><input autocomplete="nope" id="email" type="email" name="email" placeholder="Email / Pseudo" size=40 ></p>
+                <p><input autocomplete="nope" type="password" name="motdepasse" placeholder="Mot de Passe" size=40 ></p>
                 
                 <input type="submit" name="connexion" value="CONNEXION">
         </form>
