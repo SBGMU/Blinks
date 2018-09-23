@@ -6,24 +6,32 @@ function dbConnect()
     return $db;
 }
 
-function verifIdentification()
+function getUsernames()
 {
-    $db = $this->dbConnect();
+    $db = dbConnect();
+    $reponse = $db->query('SELECT username FROM membres');
 
-    $erreur = 0;
-
-    $reponse = $db->prepare('SELECT username FROM membres WHERE username = "'. $S_POST['username'] .'" ');
-    $pseudo = $reponse->fetch();
-    $reponse = $db->prepare('SELECT email FROM membres WHERE email = "'. $S_POST['email'] .'" ');
-    $mails = $reponse->fetch();
-    
-    if(strtolower($_POST['username']) == strtolower($pseudo['username']) ){
-        echo 'Désolé, cet identifiant exite déjà.';
-        return $erreur = 1;
-
-    }elseif(strtolower($_POST['mail']) == strtolower($mails['email']) ){
-        echo 'Désolé, cet email est déjà utilisé !';
-        return $erreur = 1;
-    }
+    return $req;
 }
 
+function getEmails()
+{
+    $db = dbConnect();
+    $reponse = $db->prepare('SELECT email FROM membres');
+    
+    return $req;
+}
+
+function addUsers()
+{
+    $req = $bdd->prepare('INSERT INTO membres(username, nom, prenom, email, motdepasse, date_inscription, id_groupe) VALUES(:username, :nom, :prenom, :email, :motdepasse, CURDATE(), 1)');
+    $req->execute(array(
+        'username' => $username,
+        'nom' => $nom,
+        'prenom' => $prenom,
+        'email' => $email,
+        'email' => $email,
+        'motdepasse' => $motdepasse_hache,
+        'date_inscription' => $date_inscription, 
+        'id_groupe' => $id_groupe));
+}
